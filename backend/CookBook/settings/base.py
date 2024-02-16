@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "defender",
     "common",
     "users",
+    "recipe",
+    "restaurant"
 ]
 
 MIDDLEWARE = [
