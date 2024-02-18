@@ -14,12 +14,12 @@ class IngredientViewSet(ModelViewSet):
     permission_classes = [AllowAny]
     serializer_class = IngredientSerializer
 
-    def post(self, request):
-        try:
-            ingredient = Ingredient.objects.create(**request.data)
-            return Response(data=ingredient, status=status.HTTP_201_CREATED)
-        except ValidationError as errors:
-            return Response(data=errors.message_dict, status=status.HTTP_400_BAD_REQUEST)
+    # def post(self, request):
+    #     try:
+    #         ingredient = Ingredient.objects.create(**request.data)
+    #         return Response(data=ingredient, status=status.HTTP_201_CREATED)
+    #     except ValidationError as errors:
+    #         return Response(data=errors.message_dict, status=status.HTTP_400_BAD_REQUEST)
 
 
 class RecipeViewSet(ModelViewSet):
@@ -28,9 +28,9 @@ class RecipeViewSet(ModelViewSet):
     permission_classes = [AllowAny]
     serializer_class = RecipeSerializer
 
-    def post(self, request):
-        try:
-            recipe = Recipe.objects.create(**request.data)
-            return Response(data=recipe, status=status)
-        except ValidationError as error:
-            return Response(data=error.message_dict, status=status.HTTP_400_BAD_REQUEST)
+    # def post(self, request):
+    #     try:
+    #         recipe = Recipe.objects.create(**request.data)
+    #         return Response(data=recipe, status=status)
+    #     except ValidationError as error:
+    #         return Response(data=error.message_dict, status=status.HTTP_400_BAD_REQUEST)
