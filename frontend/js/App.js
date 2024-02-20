@@ -10,6 +10,7 @@ import RecipeList from "./pages/RecipeList";
 import { PATHS } from "./constants";
 import configureStore from "./store";
 import RecipeView from "./pages/RecipeView";
+import RecipeAdd from "./pages/RecipeAdd";
 
 const store = configureStore({});
 const App = () => (
@@ -20,8 +21,9 @@ const App = () => (
         <Container>
           <Routes>
             <Route element={<Home />} path={PATHS.HOME} />
-            <Route element={<RecipeList />} path={PATHS.RECIPE_LIST} />
             <Route element={<RecipeView />} path={PATHS.RECIPE_VIEW} />
+            <Route element={<RecipeAdd />} path={PATHS.RECIPE_ADD} />
+            <Route element={<RecipeList />} path={PATHS.RECIPE_LIST} />
           </Routes>
         </Container>
       </BrowserRouter>
