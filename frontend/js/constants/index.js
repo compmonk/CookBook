@@ -18,5 +18,5 @@ export const PATHS = {
   HOME: "/",
   RECIPE_LIST: "/recipes/:page",
   RECIPE_VIEW: "/recipe/:id",
-  RECIPE_ADD: "/recipes/add",
+  RECIPE_ADD: "/add",
 };
