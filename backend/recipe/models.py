@@ -10,6 +10,9 @@ class Recipe(IndexedTimeStampedModel):
     directions = models.TextField(max_length=400)
     details = models.JSONField(default=dict, blank=True)
 
+    class Meta:
+        ordering = ["id"]
+
     def __str__(self):
         return self.title
 
