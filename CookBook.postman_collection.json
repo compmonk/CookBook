@@ -1,0 +1,1378 @@
+{
+	"info": {
+		"_postman_id": "47dac359-b4ed-4cf0-9f6c-8df133270d2c",
+		"name": "CookBook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8357128"
+	},
+	"item": [
+		{
+			"name": "Recipe",
+			"item": [
+				{
+					"name": "Get Recipe List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/recipe/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"recipe",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/recipe/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"recipe",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 18 Feb 2024 15:02:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "style-src 'self' 'unsafe-inline'; default-src 'self'; img-src 'self' http://localhost:3000; font-src 'self' 'unsafe-inline' http://localhost:3000; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://browser.sentry-cdn.com http://localhost:3000 ws://localhost:3000/ws; connect-src 'self' https://sentry.io http://localhost:3000 ws://localhost:3000/ws"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "21302"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "accelerometer=(), camera=(), display-capture=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 1028,\n    \"next\": \"http://localhost:8000/api/recipe/?limit=10&offset=10\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 1,\n            \"ingredients\": [\n                {\n                    \"id\": 1,\n                    \"created\": \"2024-02-17T20:38:38.455859Z\",\n                    \"modified\": \"2024-02-17T20:38:38.455859Z\",\n                    \"name\": \"1 tablespoon unsalte\",\n                    \"recipe\": 1\n                },\n                {\n                    \"id\": 2,\n                    \"created\": \"2024-02-17T20:38:38.463173Z\",\n                    \"modified\": \"2024-02-17T20:38:38.463173Z\",\n                    \"name\": \"1 tablespoon vegetab\",\n                    \"recipe\": 1\n                },\n                {\n                    \"id\": 3,\n                    \"created\": \"2024-02-17T20:38:38.464967Z\",\n                    \"modified\": \"2024-02-17T20:38:38.464967Z\",\n                    \"name\": \"1 cup thinly sliced \",\n                    \"recipe\": 1\n                },\n                {\n                    \"id\": 4,\n                    \"created\": \"2024-02-17T20:38:38.466433Z\",\n                    \"modified\": \"2024-02-17T20:38:38.466433Z\",\n                    \"name\": \"1 teaspoon salt, plu\",\n                    \"recipe\": 1\n                },\n                {\n                    \"id\": 5,\n                    \"created\": \"2024-02-17T20:38:38.467771Z\",\n                    \"modified\": \"2024-02-17T20:38:38.467771Z\",\n                    \"name\": \"½ cup diced onion\",\n                    \"recipe\": 1\n                },\n                {\n                    \"id\": 6,\n                    \"created\": \"2024-02-17T20:38:38.469349Z\",\n                    \"modified\": \"2024-02-17T20:38:38.469349Z\",\n                    \"name\": \"1 pound ground beef\",\n                    \"recipe\": 1\n                },\n                {\n                    \"id\": 7,\n                    \"created\": \"2024-02-17T20:38:38.470855Z\",\n                    \"modified\": \"2024-02-17T20:38:38.470855Z\",\n                    \"name\": \"freshly ground black\",\n                    \"recipe\": 1\n                },\n                {\n                    \"id\": 8,\n                    \"created\": \"2024-02-17T20:38:38.472368Z\",\n                    \"modified\": \"2024-02-17T20:38:38.472368Z\",\n                    \"name\": \"1 pinch cayenne pepp\",\n                    \"recipe\": 1\n                },\n                {\n                    \"id\": 9,\n                    \"created\": \"2024-02-17T20:38:38.473891Z\",\n                    \"modified\": \"2024-02-17T20:38:38.473891Z\",\n                    \"name\": \"2 cloves minced garl\",\n                    \"recipe\": 1\n                },\n                {\n                    \"id\": 10,\n                    \"created\": \"2024-02-17T20:38:38.475297Z\",\n                    \"modified\": \"2024-02-17T20:38:38.475297Z\",\n                    \"name\": \"1 ⅓ tablespoons flou\",\n                    \"recipe\": 1\n                },\n                {\n                    \"id\": 11,\n                    \"created\": \"2024-02-17T20:38:38.476773Z\",\n                    \"modified\": \"2024-02-17T20:38:38.476773Z\",\n                    \"name\": \"2 tablespoons vodka \",\n                    \"recipe\": 1\n                },\n                {\n                    \"id\": 12,\n                    \"created\": \"2024-02-17T20:38:38.478348Z\",\n                    \"modified\": \"2024-02-17T20:38:38.478348Z\",\n                    \"name\": \"2 ½ cups beef broth,\",\n                    \"recipe\": 1\n                },\n                {\n                    \"id\": 13,\n                    \"created\": \"2024-02-17T20:38:38.479718Z\",\n                    \"modified\": \"2024-02-17T20:38:38.479718Z\",\n                    \"name\": \"1 cup water\",\n                    \"recipe\": 1\n                },\n                {\n                    \"id\": 14,\n                    \"created\": \"2024-02-17T20:38:38.481043Z\",\n                    \"modified\": \"2024-02-17T20:38:38.481043Z\",\n                    \"name\": \"2 ½ cups egg noodles\",\n                    \"recipe\": 1\n                },\n                {\n                    \"id\": 15,\n                    \"created\": \"2024-02-17T20:38:38.482301Z\",\n                    \"modified\": \"2024-02-17T20:38:38.482301Z\",\n                    \"name\": \"½ cup sour cream, pl\",\n                    \"recipe\": 1\n                },\n                {\n                    \"id\": 16,\n                    \"created\": \"2024-02-17T20:38:38.483445Z\",\n                    \"modified\": \"2024-02-17T20:38:38.483445Z\",\n                    \"name\": \"2 tablespoons fresh \",\n                    \"recipe\": 1\n                }\n            ],\n            \"created\": \"2024-02-17T20:38:38.403683Z\",\n            \"modified\": \"2024-02-17T20:38:38.403683Z\",\n            \"title\": \"Ground Beef Stroganoff Noodles\",\n            \"description\": \"These ground beef stroganoff noodles are a shortcut version of classic beef stroganoff in a one-pan version. The ultimate comfort food with flavorful ground beef, mushrooms, and egg noodles.\",\n            \"directions\": \"Gather all ingredients.\\n\\n \\n\\n\\n\\n\\n\\n \\n ALLRECIPES / SONIA BOZZO\\n\\n\\n\\n\\n Melt butter and oil in a skillet over medium-high heat. Add mushrooms, season with salt, and saute, stirring occasionally, until they turn golden brown, 5 to 10 minutes.\\n\\n \\n\\n\\n\\n\\n\\n \\n ALLRECIPES / SONIA BOZZO\\n\\n\\n\\n\\n Add onion and ground beef. Cook, stirring, until meat is browned and crumbly, and onions turn soft and translucent, about 5 \",\n            \"details\": {\n                \"Servings\": \"4\",\n                \"Cook Time\": \"30 mins\",\n                \"Prep Time\": \"10 mins\",\n                \"Total Time\": \"40 mins\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"ingredients\": [\n                {\n                    \"id\": 17,\n                    \"created\": \"2024-02-17T20:38:38.824746Z\",\n                    \"modified\": \"2024-02-17T20:38:38.824746Z\",\n                    \"name\": \"½ teaspoon sesame oi\",\n                    \"recipe\": 2\n                },\n                {\n                    \"id\": 18,\n                    \"created\": \"2024-02-17T20:38:38.826384Z\",\n                    \"modified\": \"2024-02-17T20:38:38.826384Z\",\n                    \"name\": \"1 tablespoon canola \",\n                    \"recipe\": 2\n                },\n                {\n                    \"id\": 19,\n                    \"created\": \"2024-02-17T20:38:38.827529Z\",\n                    \"modified\": \"2024-02-17T20:38:38.827529Z\",\n                    \"name\": \"2 tablespoons chile \",\n                    \"recipe\": 2\n                },\n                {\n                    \"id\": 20,\n                    \"created\": \"2024-02-17T20:38:38.828760Z\",\n                    \"modified\": \"2024-02-17T20:38:38.828760Z\",\n                    \"name\": \"2 cloves garlic, cho\",\n                    \"recipe\": 2\n                },\n                {\n                    \"id\": 21,\n                    \"created\": \"2024-02-17T20:38:38.830103Z\",\n                    \"modified\": \"2024-02-17T20:38:38.830103Z\",\n                    \"name\": \"4  skinless, boneles\",\n                    \"recipe\": 2\n                },\n                {\n                    \"id\": 22,\n                    \"created\": \"2024-02-17T20:38:38.831352Z\",\n                    \"modified\": \"2024-02-17T20:38:38.831352Z\",\n                    \"name\": \"½ cup soy sauce\",\n                    \"recipe\": 2\n                },\n                {\n                    \"id\": 23,\n                    \"created\": \"2024-02-17T20:38:38.832488Z\",\n                    \"modified\": \"2024-02-17T20:38:38.832488Z\",\n                    \"name\": \"1  onion, sliced len\",\n                    \"recipe\": 2\n                },\n                {\n                    \"id\": 24,\n                    \"created\": \"2024-02-17T20:38:38.833560Z\",\n                    \"modified\": \"2024-02-17T20:38:38.833560Z\",\n                    \"name\": \"½ medium head cabbag\",\n                    \"recipe\": 2\n                },\n                {\n                    \"id\": 25,\n                    \"created\": \"2024-02-17T20:38:38.834583Z\",\n                    \"modified\": \"2024-02-17T20:38:38.834583Z\",\n                    \"name\": \"2  carrots, coarsely\",\n                    \"recipe\": 2\n                },\n                {\n                    \"id\": 26,\n                    \"created\": \"2024-02-17T20:38:38.835661Z\",\n                    \"modified\": \"2024-02-17T20:38:38.835661Z\",\n                    \"name\": \"8 ounces soba noodle\",\n                    \"recipe\": 2\n                }\n            ],\n            \"created\": \"2024-02-17T20:38:38.819241Z\",\n            \"modified\": \"2024-02-17T20:38:38.819241Z\",\n            \"title\": \"Yakisoba Chicken\",\n            \"description\": \"Japanese buckwheat flour noodles with chicken at their best! Noodles can be found in an Asian foods market.\",\n            \"directions\": \"In a large skillet combine sesame oil, canola oil and chili paste; stir-fry 30 seconds. Add garlic and stir fry an additional 30 seconds. Add chicken and 1/4 cup of the soy sauce and stir fry until chicken is no longer pink, about 5 minutes. Remove mixture from pan, set aside, and keep warm.\\n\\n\\n\\n\\n In the emptied pan combine the onion, cabbage, and carrots. Stir-fry until cabbage begins to wilt, 2 t\",\n            \"details\": {\n                \"Yield\": \"6 servings\",\n                \"Servings\": \"6\",\n                \"Cook Time\": \"15 mins\",\n                \"Prep Time\": \"15 mins\",\n                \"Total Time\": \"30 mins\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"ingredients\": [\n                {\n                    \"id\": 27,\n                    \"created\": \"2024-02-17T20:38:39.220304Z\",\n                    \"modified\": \"2024-02-17T20:38:39.220304Z\",\n                    \"name\": \"5 slices bacon, dice\",\n                    \"recipe\": 3\n                },\n                {\n                    \"id\": 28,\n                    \"created\": \"2024-02-17T20:38:39.222266Z\",\n                    \"modified\": \"2024-02-17T20:38:39.222266Z\",\n                    \"name\": \"2 large onions, dice\",\n                    \"recipe\": 3\n                },\n                {\n                    \"id\": 29,\n                    \"created\": \"2024-02-17T20:38:39.224034Z\",\n                    \"modified\": \"2024-02-17T20:38:39.224034Z\",\n                    \"name\": \"¼ cup Hungarian papr\",\n                    \"recipe\": 3\n                },\n                {\n                    \"id\": 30,\n                    \"created\": \"2024-02-17T20:38:39.226580Z\",\n                    \"modified\": \"2024-02-17T20:38:39.226580Z\",\n                    \"name\": \"1 ½ teaspoons garlic\",\n                    \"recipe\": 3\n                },\n                {\n                    \"id\": 31,\n                    \"created\": \"2024-02-17T20:38:39.228890Z\",\n                    \"modified\": \"2024-02-17T20:38:39.228890Z\",\n                    \"name\": \"¼ teaspoon ground bl\",\n                    \"recipe\": 3\n                },\n                {\n                    \"id\": 32,\n                    \"created\": \"2024-02-17T20:38:39.230406Z\",\n                    \"modified\": \"2024-02-17T20:38:39.230406Z\",\n                    \"name\": \"5 pounds boneless po\",\n                    \"recipe\": 3\n                },\n                {\n                    \"id\": 33,\n                    \"created\": \"2024-02-17T20:38:39.232132Z\",\n                    \"modified\": \"2024-02-17T20:38:39.232132Z\",\n                    \"name\": \"1 large yellow bell \",\n                    \"recipe\": 3\n                },\n                {\n                    \"id\": 34,\n                    \"created\": \"2024-02-17T20:38:39.233631Z\",\n                    \"modified\": \"2024-02-17T20:38:39.233631Z\",\n                    \"name\": \"2 (14 ounce) cans di\",\n                    \"recipe\": 3\n                },\n                {\n                    \"id\": 35,\n                    \"created\": \"2024-02-17T20:38:39.235065Z\",\n                    \"modified\": \"2024-02-17T20:38:39.235065Z\",\n                    \"name\": \"⅔ cup beef broth\",\n                    \"recipe\": 3\n                },\n                {\n                    \"id\": 36,\n                    \"created\": \"2024-02-17T20:38:39.236428Z\",\n                    \"modified\": \"2024-02-17T20:38:39.236428Z\",\n                    \"name\": \"2 cups reduced-fat s\",\n                    \"recipe\": 3\n                },\n                {\n                    \"id\": 37,\n                    \"created\": \"2024-02-17T20:38:39.237714Z\",\n                    \"modified\": \"2024-02-17T20:38:39.237714Z\",\n                    \"name\": \"2 (6 ounce) packages\",\n                    \"recipe\": 3\n                }\n            ],\n            \"created\": \"2024-02-17T20:38:39.213741Z\",\n            \"modified\": \"2024-02-17T20:38:39.213741Z\",\n            \"title\": \"Porkolt (Hungarian Stew) Made With Pork\",\n            \"description\": \"A flavorful stew, Pörkölt is redolent with the fragrance of paprika and bell peppers. It has few ingredients, and is surprisingly easy to make. Save time by using boneless pork chops and cubing them a\",\n            \"directions\": \"Place the bacon in a large, deep skillet, and cook over medium-high heat until evenly browned, about 10 minutes. Drain, and reserve the drippings. Add the onions to the bacon and cook together until the onion is translucent. Remove skillet from heat and stir the paprika, garlic powder, and pepper into the bacon mixture. Transfer the mixture into a large stockpot.\\n\\n\\n\\n\\n Heat a small amount of the re\",\n            \"details\": {\n                \"Yield\": \"14 servings\",\n                \"Servings\": \"14\",\n                \"Cook Time\": \"1 hr 55 mins\",\n                \"Prep Time\": \"20 mins\",\n                \"Total Time\": \"2 hrs 15 mins\"\n            }\n        },\n        {\n            \"id\": 4,\n            \"ingredients\": [\n                {\n                    \"id\": 38,\n                    \"created\": \"2024-02-17T20:38:39.548135Z\",\n                    \"modified\": \"2024-02-17T20:38:39.548135Z\",\n                    \"name\": \"1 pound bacon\",\n                    \"recipe\": 4\n                },\n                {\n                    \"id\": 39,\n                    \"created\": \"2024-02-17T20:38:39.549830Z\",\n                    \"modified\": \"2024-02-17T20:38:39.549830Z\",\n                    \"name\": \"1  onion, diced\",\n                    \"recipe\": 4\n                },\n                {\n                    \"id\": 40,\n                    \"created\": \"2024-02-17T20:38:39.551121Z\",\n                    \"modified\": \"2024-02-17T20:38:39.551121Z\",\n                    \"name\": \"1 (16 ounce) package\",\n                    \"recipe\": 4\n                },\n                {\n                    \"id\": 41,\n                    \"created\": \"2024-02-17T20:38:39.552607Z\",\n                    \"modified\": \"2024-02-17T20:38:39.552607Z\",\n                    \"name\": \"1 head cabbage, slic\",\n                    \"recipe\": 4\n                },\n                {\n                    \"id\": 42,\n                    \"created\": \"2024-02-17T20:38:39.553844Z\",\n                    \"modified\": \"2024-02-17T20:38:39.553844Z\",\n                    \"name\": \"salt and ground blac\",\n                    \"recipe\": 4\n                }\n            ],\n            \"created\": \"2024-02-17T20:38:39.541603Z\",\n            \"modified\": \"2024-02-17T20:38:39.541603Z\",\n            \"title\": \"Easy and Quick Halushki\",\n            \"description\": \"Polish dish combining bacon, fried cabbage and egg noodles.\",\n            \"directions\": \"Snip bacon into small pieces with a scissors and cook in a large skillet over medium heat until crisp, stirring often, about 10 minutes. Cook and stir onion with bacon until translucent, about 5 more minutes; set bacon and onion aside, leaving drippings in the skillet.\\n\\n\\n\\n\\n Bring a large pot of lightly salted water to a boil. Cook egg noodles in the boiling water, stirring occasionally until cooke\",\n            \"details\": {\n                \"Yield\": \"6 servings\",\n                \"Servings\": \"6\",\n                \"Cook Time\": \"20 mins\",\n                \"Prep Time\": \"10 mins\",\n                \"Total Time\": \"30 mins\"\n            }\n        },\n        {\n            \"id\": 5,\n            \"ingredients\": [\n                {\n                    \"id\": 43,\n                    \"created\": \"2024-02-17T20:38:40.020663Z\",\n                    \"modified\": \"2024-02-17T20:38:40.020663Z\",\n                    \"name\": \"½ pound thinly slice\",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 44,\n                    \"created\": \"2024-02-17T20:38:40.022503Z\",\n                    \"modified\": \"2024-02-17T20:38:40.022503Z\",\n                    \"name\": \"¼ cup soy sauce\",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 45,\n                    \"created\": \"2024-02-17T20:38:40.024005Z\",\n                    \"modified\": \"2024-02-17T20:38:40.024005Z\",\n                    \"name\": \"¼ cup rice wine\",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 46,\n                    \"created\": \"2024-02-17T20:38:40.025513Z\",\n                    \"modified\": \"2024-02-17T20:38:40.025513Z\",\n                    \"name\": \"1 teaspoon white pep\",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 47,\n                    \"created\": \"2024-02-17T20:38:40.026981Z\",\n                    \"modified\": \"2024-02-17T20:38:40.026981Z\",\n                    \"name\": \"1 teaspoon Chinese f\",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 48,\n                    \"created\": \"2024-02-17T20:38:40.028488Z\",\n                    \"modified\": \"2024-02-17T20:38:40.028488Z\",\n                    \"name\": \"1 teaspoon cornstarc\",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 49,\n                    \"created\": \"2024-02-17T20:38:40.029770Z\",\n                    \"modified\": \"2024-02-17T20:38:40.029770Z\",\n                    \"name\": \"4  dried Chinese bla\",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 50,\n                    \"created\": \"2024-02-17T20:38:40.031250Z\",\n                    \"modified\": \"2024-02-17T20:38:40.031250Z\",\n                    \"name\": \"1 (8 ounce) package \",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 51,\n                    \"created\": \"2024-02-17T20:38:40.032657Z\",\n                    \"modified\": \"2024-02-17T20:38:40.032657Z\",\n                    \"name\": \"¼ cup vegetable oil,\",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 52,\n                    \"created\": \"2024-02-17T20:38:40.034020Z\",\n                    \"modified\": \"2024-02-17T20:38:40.034020Z\",\n                    \"name\": \"2  eggs, beaten\",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 53,\n                    \"created\": \"2024-02-17T20:38:40.035429Z\",\n                    \"modified\": \"2024-02-17T20:38:40.035429Z\",\n                    \"name\": \"¼ clove garlic, minc\",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 54,\n                    \"created\": \"2024-02-17T20:38:40.036822Z\",\n                    \"modified\": \"2024-02-17T20:38:40.036822Z\",\n                    \"name\": \"1 tablespoon dried s\",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 55,\n                    \"created\": \"2024-02-17T20:38:40.038243Z\",\n                    \"modified\": \"2024-02-17T20:38:40.038243Z\",\n                    \"name\": \"3  carrots, cut into\",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 56,\n                    \"created\": \"2024-02-17T20:38:40.039742Z\",\n                    \"modified\": \"2024-02-17T20:38:40.039742Z\",\n                    \"name\": \"½  onion, chopped\",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 57,\n                    \"created\": \"2024-02-17T20:38:40.041143Z\",\n                    \"modified\": \"2024-02-17T20:38:40.041143Z\",\n                    \"name\": \"3 cups bean sprouts\",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 58,\n                    \"created\": \"2024-02-17T20:38:40.042498Z\",\n                    \"modified\": \"2024-02-17T20:38:40.042498Z\",\n                    \"name\": \"4 leaves napa cabbag\",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 59,\n                    \"created\": \"2024-02-17T20:38:40.043763Z\",\n                    \"modified\": \"2024-02-17T20:38:40.043763Z\",\n                    \"name\": \"salt to taste\",\n                    \"recipe\": 5\n                },\n                {\n                    \"id\": 60,\n                    \"created\": \"2024-02-17T20:38:40.044977Z\",\n                    \"modified\": \"2024-02-17T20:38:40.044977Z\",\n                    \"name\": \"3 sprigs fresh cilan\",\n                    \"recipe\": 5\n                }\n            ],\n            \"created\": \"2024-02-17T20:38:40.014360Z\",\n            \"modified\": \"2024-02-17T20:38:40.014360Z\",\n            \"title\": \"Tsao Mi Fun (Taiwanese Fried Rice Noodles)\",\n            \"description\": \"My mom's been making me tsao mi fun, in Mandarin, or tsa bi whun, in Taiwanese, since I was a little girl. Tsa bi whun literally translates to 'fried rice noodles'. You'll most likely find all the ing\",\n            \"directions\": \"Place the pork into a mixing bowl and pour in the soy sauce and rice wine. Sprinkle with the white pepper, five-spice powder, and cornstarch. Mix well, then set aside to marinate. Soak the mushrooms in a bowl of cold water for 20 minutes, then pour off the water, cut off and discard the stems of the mushrooms. Slice the mushrooms thinly and reserve. Soak the rice vermicelli in a separate bowl of c\",\n            \"details\": {\n                \"Yield\": \"4 servings\",\n                \"Servings\": \"4\",\n                \"Cook Time\": \"15 mins\",\n                \"Prep Time\": \"35 mins\",\n                \"Total Time\": \"1 hr 10 mins\",\n                \"Additional Time\": \"20 mins\"\n            }\n        },\n        {\n            \"id\": 6,\n            \"ingredients\": [\n                {\n                    \"id\": 61,\n                    \"created\": \"2024-02-17T20:38:40.404905Z\",\n                    \"modified\": \"2024-02-17T20:38:40.404905Z\",\n                    \"name\": \"1 large carrot, fine\",\n                    \"recipe\": 6\n                },\n                {\n                    \"id\": 62,\n                    \"created\": \"2024-02-17T20:38:40.406952Z\",\n                    \"modified\": \"2024-02-17T20:38:40.406952Z\",\n                    \"name\": \"2 cups shredded gree\",\n                    \"recipe\": 6\n                },\n                {\n                    \"id\": 63,\n                    \"created\": \"2024-02-17T20:38:40.408650Z\",\n                    \"modified\": \"2024-02-17T20:38:40.408650Z\",\n                    \"name\": \"1  red bell pepper, \",\n                    \"recipe\": 6\n                },\n                {\n                    \"id\": 64,\n                    \"created\": \"2024-02-17T20:38:40.410243Z\",\n                    \"modified\": \"2024-02-17T20:38:40.410243Z\",\n                    \"name\": \"2  jalapeno pepper, \",\n                    \"recipe\": 6\n                },\n                {\n                    \"id\": 65,\n                    \"created\": \"2024-02-17T20:38:40.411601Z\",\n                    \"modified\": \"2024-02-17T20:38:40.411601Z\",\n                    \"name\": \"½ cup chopped green \",\n                    \"recipe\": 6\n                },\n                {\n                    \"id\": 66,\n                    \"created\": \"2024-02-17T20:38:40.413138Z\",\n                    \"modified\": \"2024-02-17T20:38:40.413138Z\",\n                    \"name\": \"3 cloves garlic, fin\",\n                    \"recipe\": 6\n                }\n            ],\n            \"created\": \"2024-02-17T20:38:40.398208Z\",\n            \"modified\": \"2024-02-17T20:38:40.398208Z\",\n            \"title\": \"Spicy Chicken Noodles\",\n            \"description\": \"No matter what recipe they're used in, rice noodles are a proven crowd-pleaser. I think this spicy chicken noodles dish is perfect for using up leftover chicken, assuming it wasn't horribly overcooked\",\n            \"directions\": \"Place carrots, cabbage, bell pepper, jalapeno pepper, green onions, and garlic in a mixing bowl.\\n\\n\\n\\n\\n Mix chicken broth, rice vinegar, hoisin sauce, soy sauce, ketchup, brown sugar, sriracha sauce, and red pepper flakes together in a separate mixing bowl.\\n\\n\\n\\n\\n Place dry rice noodles in a large mixing bowl. Cover with about 6 cups boiling water; add a pinch of salt. Stir from time to time until noo\",\n            \"details\": {\n                \"Yield\": \"2 servings\",\n                \"Servings\": \"2\",\n                \"Cook Time\": \"13 mins\",\n                \"Prep Time\": \"15 mins\",\n                \"Total Time\": \"28 mins\"\n            }\n        },\n        {\n            \"id\": 7,\n            \"ingredients\": [\n                {\n                    \"id\": 67,\n                    \"created\": \"2024-02-17T20:38:40.768189Z\",\n                    \"modified\": \"2024-02-17T20:38:40.768189Z\",\n                    \"name\": \"6  eggs\",\n                    \"recipe\": 7\n                },\n                {\n                    \"id\": 68,\n                    \"created\": \"2024-02-17T20:38:40.769687Z\",\n                    \"modified\": \"2024-02-17T20:38:40.769687Z\",\n                    \"name\": \"¼ cup mayonnaise\",\n                    \"recipe\": 7\n                },\n                {\n                    \"id\": 69,\n                    \"created\": \"2024-02-17T20:38:40.770834Z\",\n                    \"modified\": \"2024-02-17T20:38:40.770834Z\",\n                    \"name\": \"1 teaspoon Dijon mus\",\n                    \"recipe\": 7\n                },\n                {\n                    \"id\": 70,\n                    \"created\": \"2024-02-17T20:38:40.772156Z\",\n                    \"modified\": \"2024-02-17T20:38:40.772156Z\",\n                    \"name\": \"½ teaspoon prepared \",\n                    \"recipe\": 7\n                },\n                {\n                    \"id\": 71,\n                    \"created\": \"2024-02-17T20:38:40.773543Z\",\n                    \"modified\": \"2024-02-17T20:38:40.773543Z\",\n                    \"name\": \"½  lemon, juiced\",\n                    \"recipe\": 7\n                },\n                {\n                    \"id\": 72,\n                    \"created\": \"2024-02-17T20:38:40.774744Z\",\n                    \"modified\": \"2024-02-17T20:38:40.774744Z\",\n                    \"name\": \"¼ cup chopped green \",\n                    \"recipe\": 7\n                },\n                {\n                    \"id\": 73,\n                    \"created\": \"2024-02-17T20:38:40.776679Z\",\n                    \"modified\": \"2024-02-17T20:38:40.776679Z\",\n                    \"name\": \"salt and pepper to t\",\n                    \"recipe\": 7\n                }\n            ],\n            \"created\": \"2024-02-17T20:38:40.761951Z\",\n            \"modified\": \"2024-02-17T20:38:40.761951Z\",\n            \"title\": \"Jen's Heavenly Egg Salad\",\n            \"description\": \"The tang from the Dijon, freshness from the lemon, and liveliness when paired with watercress makes this recipe a MUST! This recipe tastes best when paired with wheat bread, watercress and avocado!! B\",\n            \"directions\": \"Place egg in a saucepan and cover with cold water. Bring water to a boil and immediately remove from heat. Cover and let eggs stand in hot water for 10 to 12 minutes. Remove from hot water, cool and peel. For faster cooling, place the eggs in an ice bath before peeling.\\n\\n\\n\\n\\n In a medium bowl, stir together the mayonnaise, Dijon mustard, yellow mustard, lemon juice and green onions. Chop the eggs i\",\n            \"details\": {\n                \"Yield\": \"4 servings\",\n                \"Servings\": \"4\",\n                \"Cook Time\": \"16 mins\",\n                \"Prep Time\": \"5 mins\",\n                \"Total Time\": \"21 mins\"\n            }\n        },\n        {\n            \"id\": 8,\n            \"ingredients\": [\n                {\n                    \"id\": 74,\n                    \"created\": \"2024-02-17T20:38:41.118019Z\",\n                    \"modified\": \"2024-02-17T20:38:41.118019Z\",\n                    \"name\": \"1 pound ground sirlo\",\n                    \"recipe\": 8\n                },\n                {\n                    \"id\": 75,\n                    \"created\": \"2024-02-17T20:38:41.119387Z\",\n                    \"modified\": \"2024-02-17T20:38:41.119387Z\",\n                    \"name\": \"½ cup panko bread cr\",\n                    \"recipe\": 8\n                },\n                {\n                    \"id\": 76,\n                    \"created\": \"2024-02-17T20:38:41.120548Z\",\n                    \"modified\": \"2024-02-17T20:38:41.120548Z\",\n                    \"name\": \"1  egg, beaten\",\n                    \"recipe\": 8\n                },\n                {\n                    \"id\": 77,\n                    \"created\": \"2024-02-17T20:38:41.121776Z\",\n                    \"modified\": \"2024-02-17T20:38:41.121776Z\",\n                    \"name\": \"2 tablespoons milk\",\n                    \"recipe\": 8\n                },\n                {\n                    \"id\": 78,\n                    \"created\": \"2024-02-17T20:38:41.123289Z\",\n                    \"modified\": \"2024-02-17T20:38:41.123289Z\",\n                    \"name\": \"½ (1 ounce) package \",\n                    \"recipe\": 8\n                },\n                {\n                    \"id\": 79,\n                    \"created\": \"2024-02-17T20:38:41.124356Z\",\n                    \"modified\": \"2024-02-17T20:38:41.124356Z\",\n                    \"name\": \"1 teaspoon Worcester\",\n                    \"recipe\": 8\n                },\n                {\n                    \"id\": 80,\n                    \"created\": \"2024-02-17T20:38:41.125308Z\",\n                    \"modified\": \"2024-02-17T20:38:41.125308Z\",\n                    \"name\": \"¼ teaspoon ground bl\",\n                    \"recipe\": 8\n                }\n            ],\n            \"created\": \"2024-02-17T20:38:41.113088Z\",\n            \"modified\": \"2024-02-17T20:38:41.113088Z\",\n            \"title\": \"Midwest Salisbury Steak\",\n            \"description\": \"This recipe for Salisbury steak uses good quality ground sirloin and tastes wonderful. You won't have to drain any grease from the patties once they've browned. Serve over mashed potatoes, egg noodles\",\n            \"directions\": \"Make the patties: Mix ground sirloin, panko bread crumbs, egg, milk, 1/2 packet onion soup mix, Worcestershire sauce, and black pepper together in a large bowl; shape into 5 patties.\\n\\n\\n\\n\\n Heat a skillet over medium heat. Cook patties in the hot skillet until browned, 3 to 5 minutes per side.\\n\\n\\n\\n\\n Make the gravy: Melt butter in a separate skillet over medium-high heat. Sauté mushrooms and onion in \",\n            \"details\": {\n                \"Servings\": \"5\",\n                \"Cook Time\": \"50 mins\",\n                \"Prep Time\": \"10 mins\",\n                \"Total Time\": \"1 hr\"\n            }\n        },\n        {\n            \"id\": 9,\n            \"ingredients\": [\n                {\n                    \"id\": 81,\n                    \"created\": \"2024-02-17T20:38:41.467221Z\",\n                    \"modified\": \"2024-02-17T20:38:41.467221Z\",\n                    \"name\": \"¼ cup butter, melted\",\n                    \"recipe\": 9\n                },\n                {\n                    \"id\": 82,\n                    \"created\": \"2024-02-17T20:38:41.469363Z\",\n                    \"modified\": \"2024-02-17T20:38:41.469363Z\",\n                    \"name\": \"3 tablespoons Dijon \",\n                    \"recipe\": 9\n                },\n                {\n                    \"id\": 83,\n                    \"created\": \"2024-02-17T20:38:41.470946Z\",\n                    \"modified\": \"2024-02-17T20:38:41.470946Z\",\n                    \"name\": \"1 ½ tablespoons hone\",\n                    \"recipe\": 9\n                },\n                {\n                    \"id\": 84,\n                    \"created\": \"2024-02-17T20:38:41.472660Z\",\n                    \"modified\": \"2024-02-17T20:38:41.472660Z\",\n                    \"name\": \"¼ cup dry bread crum\",\n                    \"recipe\": 9\n                },\n                {\n                    \"id\": 85,\n                    \"created\": \"2024-02-17T20:38:41.474377Z\",\n                    \"modified\": \"2024-02-17T20:38:41.474377Z\",\n                    \"name\": \"¼ cup finely chopped\",\n                    \"recipe\": 9\n                },\n                {\n                    \"id\": 86,\n                    \"created\": \"2024-02-17T20:38:41.475893Z\",\n                    \"modified\": \"2024-02-17T20:38:41.475893Z\",\n                    \"name\": \"4 teaspoons chopped \",\n                    \"recipe\": 9\n                },\n                {\n                    \"id\": 87,\n                    \"created\": \"2024-02-17T20:38:41.477654Z\",\n                    \"modified\": \"2024-02-17T20:38:41.477654Z\",\n                    \"name\": \"4 (4 ounce) fillets \",\n                    \"recipe\": 9\n                },\n                {\n                    \"id\": 88,\n                    \"created\": \"2024-02-17T20:38:41.479328Z\",\n                    \"modified\": \"2024-02-17T20:38:41.479328Z\",\n                    \"name\": \"salt and pepper to t\",\n                    \"recipe\": 9\n                },\n                {\n                    \"id\": 89,\n                    \"created\": \"2024-02-17T20:38:41.481042Z\",\n                    \"modified\": \"2024-02-17T20:38:41.481042Z\",\n                    \"name\": \"1  lemon, for garnis\",\n                    \"recipe\": 9\n                }\n            ],\n            \"created\": \"2024-02-17T20:38:41.460606Z\",\n            \"modified\": \"2024-02-17T20:38:41.460606Z\",\n            \"title\": \"Baked Dijon Salmon\",\n            \"description\": \"This mustard-crusted salmon is a wonderful way to prepare fresh salmon fillets in the oven. Be sure to make extra — your family will be begging for more!\",\n            \"directions\": \"Preheat the oven to 400 degrees F (200 degrees C).\\n\\n\\n\\n\\n Stir together butter, mustard, and honey in a small bowl. Set aside.\\n\\n \\n\\n\\n\\n\\n\\n \\n Dotdash Meredith Food Studios\\n\\n\\n\\n\\n Mix together bread crumbs, pecans, and parsley in another bowl.\\n\\n \\n\\n\\n\\n\\n\\n \\n Dotdash Meredith Food Studios\\n\\n\\n\\n\\n Brush each salmon fillet lightly with honey mustard mixture.\\n\\n \\n\\n\\n\\n\\n\\n \\n Dotdash Meredith Food Studios\\n\\n\\n\\n\\n Sprinkle the\",\n            \"details\": {\n                \"Servings\": \"4\",\n                \"Cook Time\": \"15 mins\",\n                \"Prep Time\": \"15 mins\",\n                \"Total Time\": \"30 mins\"\n            }\n        },\n        {\n            \"id\": 10,\n            \"ingredients\": [\n                {\n                    \"id\": 90,\n                    \"created\": \"2024-02-17T20:38:41.832940Z\",\n                    \"modified\": \"2024-02-17T20:38:41.832940Z\",\n                    \"name\": \"2 ½ cups diced and c\",\n                    \"recipe\": 10\n                },\n                {\n                    \"id\": 91,\n                    \"created\": \"2024-02-17T20:38:41.834375Z\",\n                    \"modified\": \"2024-02-17T20:38:41.834375Z\",\n                    \"name\": \"1 cup chopped celery\",\n                    \"recipe\": 10\n                },\n                {\n                    \"id\": 92,\n                    \"created\": \"2024-02-17T20:38:41.835609Z\",\n                    \"modified\": \"2024-02-17T20:38:41.835609Z\",\n                    \"name\": \"1 cup sliced, seedle\",\n                    \"recipe\": 10\n                },\n                {\n                    \"id\": 93,\n                    \"created\": \"2024-02-17T20:38:41.836742Z\",\n                    \"modified\": \"2024-02-17T20:38:41.836742Z\",\n                    \"name\": \"½ cup sliced almonds\",\n                    \"recipe\": 10\n                },\n                {\n                    \"id\": 94,\n                    \"created\": \"2024-02-17T20:38:41.837920Z\",\n                    \"modified\": \"2024-02-17T20:38:41.837920Z\",\n                    \"name\": \"2 tablespoons choppe\",\n                    \"recipe\": 10\n                },\n                {\n                    \"id\": 95,\n                    \"created\": \"2024-02-17T20:38:41.839305Z\",\n                    \"modified\": \"2024-02-17T20:38:41.839305Z\",\n                    \"name\": \"1 teaspoon salt\",\n                    \"recipe\": 10\n                },\n                {\n                    \"id\": 96,\n                    \"created\": \"2024-02-17T20:38:41.840496Z\",\n                    \"modified\": \"2024-02-17T20:38:41.840496Z\",\n                    \"name\": \"1 cup mayonnaise\",\n                    \"recipe\": 10\n                },\n                {\n                    \"id\": 97,\n                    \"created\": \"2024-02-17T20:38:41.841549Z\",\n                    \"modified\": \"2024-02-17T20:38:41.841549Z\",\n                    \"name\": \"¼ cup heavy whipping\",\n                    \"recipe\": 10\n                }\n            ],\n            \"created\": \"2024-02-17T20:38:41.827899Z\",\n            \"modified\": \"2024-02-17T20:38:41.827899Z\",\n            \"title\": \"Becky's Chicken Salad\",\n            \"description\": \"A delicious, rich and tasty cold chicken salad! Whipped cream gives this a lift. Serve on a lettuce leaf or in sandwiches.\",\n            \"directions\": \"In a medium bowl, whip cream to soft peaks.\\n\\n\\n\\n\\n Combine meat, celery, grapes, almonds, parsley, salt, and mayonnaise with whipped cream. Chill.\\n\\n \\n\\n\\n\\n\\n\\n \\n\\n\\n\\n\\n  Editor's Note:  \\n Try this recipe with leftover turkey, too.\",\n            \"details\": {\n                \"Yield\": \"10 servings\",\n                \"Servings\": \"10\",\n                \"Prep Time\": \"20 mins\",\n                \"Total Time\": \"20 mins\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Recipe Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/recipe/1028",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"recipe",
+								"1028"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/recipe/1028",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"recipe",
+										"1028"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 18 Feb 2024 15:01:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "style-src 'self' 'unsafe-inline'; default-src 'self'; img-src 'self' http://localhost:3000; font-src 'self' 'unsafe-inline' http://localhost:3000; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://browser.sentry-cdn.com http://localhost:3000 ws://localhost:3000/ws; connect-src 'self' https://sentry.io http://localhost:3000 ws://localhost:3000/ws"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "426"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "accelerometer=(), camera=(), display-capture=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1028,\n    \"ingredients\": [\n        {\n            \"id\": 8445,\n            \"created\": \"2024-02-18T14:47:35.497080Z\",\n            \"modified\": \"2024-02-18T14:47:35.497080Z\",\n            \"name\": \"1lb chicken\",\n            \"recipe\": 1028\n        }\n    ],\n    \"created\": \"2024-02-18T14:47:06.211343Z\",\n    \"modified\": \"2024-02-18T14:47:06.211343Z\",\n    \"title\": \"Chicken Al'apuza\",\n    \"description\": \"Test dish for Chicken\",\n    \"directions\": \"Garnish Chicken\",\n    \"details\": {\n        \"Servings\": \"1\",\n        \"Cook Time\": \"30 mins\",\n        \"Prep Time\": \"10 mins\",\n        \"Total Time\": \"40 mins\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Add Recipe",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Chicken Pasta\",\n    \"description\": \"Chicken Pasta in White Sauce\",\n    \"details\": {\n        \"Serving\": \"1\",\n        \"Calories\": \"100\",\n        \"Cook Time\": \"30 mins\"\n    },\n    \"ingredients\": [\n        {\n            \"name\": \"1 Cup Pasta\"\n        },\n        {\n            \"name\": \"1lbs Chicken\"\n        }\n    ],\n    \"directions\": \"Boil Pasta. Cook Chicken\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/recipe/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"recipe",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Chicken Al'apuza\",\n    \"description\": \"Test dish for Chicken\",\n    \"directions\": \"Garnish Chicken\",\n    \"details\": {\n        \"Servings\": \"1\",\n        \"Cook Time\": \"30 mins\",\n        \"Prep Time\": \"10 mins\",\n        \"Total Time\": \"40 mins\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/recipe/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"recipe",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 18 Feb 2024 14:47:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "style-src 'self' 'unsafe-inline'; default-src 'self'; img-src 'self' http://localhost:3000; font-src 'self' 'unsafe-inline' http://localhost:3000; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://browser.sentry-cdn.com http://localhost:3000 ws://localhost:3000/ws; connect-src 'self' https://sentry.io http://localhost:3000 ws://localhost:3000/ws"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "282"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "accelerometer=(), camera=(), display-capture=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1028,\n    \"created\": \"2024-02-18T14:47:06.211343Z\",\n    \"modified\": \"2024-02-18T14:47:06.211343Z\",\n    \"title\": \"Chicken Al'apuza\",\n    \"description\": \"Test dish for Chicken\",\n    \"directions\": \"Garnish Chicken\",\n    \"details\": {\n        \"Servings\": \"1\",\n        \"Cook Time\": \"30 mins\",\n        \"Prep Time\": \"10 mins\",\n        \"Total Time\": \"40 mins\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit Recipe",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1028,\n    \"ingredients\": [\n        {\n            \"id\": 8445,\n            \"created\": \"2024-02-18T14:47:35.497080Z\",\n            \"modified\": \"2024-02-18T14:47:35.497080Z\",\n            \"name\": \"1lb chicken\",\n            \"recipe\": 1028\n        }\n    ],\n    \"created\": \"2024-02-18T14:47:06.211343Z\",\n    \"modified\": \"2024-02-18T14:47:06.211343Z\",\n    \"title\": \"Chicken Alapuza\",\n    \"description\": \"Test dish for Chicken\",\n    \"directions\": \"Garnish Chicken\",\n    \"details\": {\n        \"Servings\": \"1\",\n        \"Cook Time\": \"30 mins\",\n        \"Prep Time\": \"10 mins\",\n        \"Total Time\": \"40 mins\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/recipe/:recipeId/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"recipe",
+								":recipeId",
+								""
+							],
+							"variable": [
+								{
+									"key": "recipeId",
+									"value": "1028"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1028,\n    \"ingredients\": [\n        {\n            \"id\": 8445,\n            \"created\": \"2024-02-18T14:47:35.497080Z\",\n            \"modified\": \"2024-02-18T14:47:35.497080Z\",\n            \"name\": \"1lb chicken\",\n            \"recipe\": 1028\n        }\n    ],\n    \"created\": \"2024-02-18T14:47:06.211343Z\",\n    \"modified\": \"2024-02-18T14:47:06.211343Z\",\n    \"title\": \"Chicken Alapuza\",\n    \"description\": \"Test dish for Chicken\",\n    \"directions\": \"Garnish Chicken\",\n    \"details\": {\n        \"Servings\": \"1\",\n        \"Cook Time\": \"30 mins\",\n        \"Prep Time\": \"10 mins\",\n        \"Total Time\": \"40 mins\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/recipe/1028/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"recipe",
+										"1028",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 18 Feb 2024 15:04:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "style-src 'self' 'unsafe-inline'; default-src 'self'; img-src 'self' http://localhost:3000; font-src 'self' 'unsafe-inline' http://localhost:3000; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://browser.sentry-cdn.com http://localhost:3000 ws://localhost:3000/ws; connect-src 'self' https://sentry.io http://localhost:3000 ws://localhost:3000/ws"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "425"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "accelerometer=(), camera=(), display-capture=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1028,\n    \"ingredients\": [\n        {\n            \"id\": 8445,\n            \"created\": \"2024-02-18T14:47:35.497080Z\",\n            \"modified\": \"2024-02-18T14:47:35.497080Z\",\n            \"name\": \"1lb chicken\",\n            \"recipe\": 1028\n        }\n    ],\n    \"created\": \"2024-02-18T14:47:06.211343Z\",\n    \"modified\": \"2024-02-18T15:04:01.556336Z\",\n    \"title\": \"Chicken Alapuza\",\n    \"description\": \"Test dish for Chicken\",\n    \"directions\": \"Garnish Chicken\",\n    \"details\": {\n        \"Servings\": \"1\",\n        \"Cook Time\": \"30 mins\",\n        \"Prep Time\": \"10 mins\",\n        \"Total Time\": \"40 mins\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Patch Recipe",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"details\": {\n        \"Servings\": \"2\",\n        \"Cook Time\": \"30 mins\",\n        \"Prep Time\": \"10 mins\",\n        \"Total Time\": \"40 mins\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/recipe/:recipeId/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"recipe",
+								":recipeId",
+								""
+							],
+							"variable": [
+								{
+									"key": "recipeId",
+									"value": "1028"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"details\": {\n        \"Servings\": \"2\",\n        \"Cook Time\": \"30 mins\",\n        \"Prep Time\": \"10 mins\",\n        \"Total Time\": \"40 mins\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/recipe/1028/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"recipe",
+										"1028",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 18 Feb 2024 15:05:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "style-src 'self' 'unsafe-inline'; default-src 'self'; img-src 'self' http://localhost:3000; font-src 'self' 'unsafe-inline' http://localhost:3000; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://browser.sentry-cdn.com http://localhost:3000 ws://localhost:3000/ws; connect-src 'self' https://sentry.io http://localhost:3000 ws://localhost:3000/ws"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "425"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "accelerometer=(), camera=(), display-capture=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1028,\n    \"ingredients\": [\n        {\n            \"id\": 8445,\n            \"created\": \"2024-02-18T14:47:35.497080Z\",\n            \"modified\": \"2024-02-18T14:47:35.497080Z\",\n            \"name\": \"1lb chicken\",\n            \"recipe\": 1028\n        }\n    ],\n    \"created\": \"2024-02-18T14:47:06.211343Z\",\n    \"modified\": \"2024-02-18T15:05:12.977863Z\",\n    \"title\": \"Chicken Alapuza\",\n    \"description\": \"Test dish for Chicken\",\n    \"directions\": \"Garnish Chicken\",\n    \"details\": {\n        \"Servings\": \"2\",\n        \"Cook Time\": \"30 mins\",\n        \"Prep Time\": \"10 mins\",\n        \"Total Time\": \"40 mins\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Recipe",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/recipe/1028/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"recipe",
+								"1028",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/recipe/1028/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"recipe",
+										"1028",
+										""
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 18 Feb 2024 15:05:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "style-src 'self' 'unsafe-inline'; default-src 'self'; img-src 'self' http://localhost:3000; font-src 'self' 'unsafe-inline' http://localhost:3000; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://browser.sentry-cdn.com http://localhost:3000 ws://localhost:3000/ws; connect-src 'self' https://sentry.io http://localhost:3000 ws://localhost:3000/ws"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "accelerometer=(), camera=(), display-capture=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ingredient",
+			"item": [
+				{
+					"name": "Get Ingredient List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/ingredient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ingredient"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/ingredient",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"ingredient"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 18 Feb 2024 14:43:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "style-src 'self' 'unsafe-inline'; default-src 'self'; img-src 'self' http://localhost:3000; font-src 'self' 'unsafe-inline' http://localhost:3000; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://browser.sentry-cdn.com http://localhost:3000 ws://localhost:3000/ws; connect-src 'self' https://sentry.io http://localhost:3000 ws://localhost:3000/ws"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1418"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "accelerometer=(), camera=(), display-capture=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 8444,\n    \"next\": \"http://localhost:8000/api/ingredient/?limit=10&offset=10\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 1,\n            \"created\": \"2024-02-17T20:38:38.455859Z\",\n            \"modified\": \"2024-02-17T20:38:38.455859Z\",\n            \"name\": \"1 tablespoon unsalte\",\n            \"recipe\": 1\n        },\n        {\n            \"id\": 2,\n            \"created\": \"2024-02-17T20:38:38.463173Z\",\n            \"modified\": \"2024-02-17T20:38:38.463173Z\",\n            \"name\": \"1 tablespoon vegetab\",\n            \"recipe\": 1\n        },\n        {\n            \"id\": 3,\n            \"created\": \"2024-02-17T20:38:38.464967Z\",\n            \"modified\": \"2024-02-17T20:38:38.464967Z\",\n            \"name\": \"1 cup thinly sliced \",\n            \"recipe\": 1\n        },\n        {\n            \"id\": 4,\n            \"created\": \"2024-02-17T20:38:38.466433Z\",\n            \"modified\": \"2024-02-17T20:38:38.466433Z\",\n            \"name\": \"1 teaspoon salt, plu\",\n            \"recipe\": 1\n        },\n        {\n            \"id\": 5,\n            \"created\": \"2024-02-17T20:38:38.467771Z\",\n            \"modified\": \"2024-02-17T20:38:38.467771Z\",\n            \"name\": \"½ cup diced onion\",\n            \"recipe\": 1\n        },\n        {\n            \"id\": 6,\n            \"created\": \"2024-02-17T20:38:38.469349Z\",\n            \"modified\": \"2024-02-17T20:38:38.469349Z\",\n            \"name\": \"1 pound ground beef\",\n            \"recipe\": 1\n        },\n        {\n            \"id\": 7,\n            \"created\": \"2024-02-17T20:38:38.470855Z\",\n            \"modified\": \"2024-02-17T20:38:38.470855Z\",\n            \"name\": \"freshly ground black\",\n            \"recipe\": 1\n        },\n        {\n            \"id\": 8,\n            \"created\": \"2024-02-17T20:38:38.472368Z\",\n            \"modified\": \"2024-02-17T20:38:38.472368Z\",\n            \"name\": \"1 pinch cayenne pepp\",\n            \"recipe\": 1\n        },\n        {\n            \"id\": 9,\n            \"created\": \"2024-02-17T20:38:38.473891Z\",\n            \"modified\": \"2024-02-17T20:38:38.473891Z\",\n            \"name\": \"2 cloves minced garl\",\n            \"recipe\": 1\n        },\n        {\n            \"id\": 10,\n            \"created\": \"2024-02-17T20:38:38.475297Z\",\n            \"modified\": \"2024-02-17T20:38:38.475297Z\",\n            \"name\": \"1 ⅓ tablespoons flou\",\n            \"recipe\": 1\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Ingredient Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/ingredient/:ingredientId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ingredient",
+								":ingredientId"
+							],
+							"variable": [
+								{
+									"key": "ingredientId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/ingredient/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"ingredient",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 18 Feb 2024 14:44:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "style-src 'self' 'unsafe-inline'; default-src 'self'; img-src 'self' http://localhost:3000; font-src 'self' 'unsafe-inline' http://localhost:3000; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://browser.sentry-cdn.com http://localhost:3000 ws://localhost:3000/ws; connect-src 'self' https://sentry.io http://localhost:3000 ws://localhost:3000/ws"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "130"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "accelerometer=(), camera=(), display-capture=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"created\": \"2024-02-17T20:38:38.455859Z\",\n    \"modified\": \"2024-02-17T20:38:38.455859Z\",\n    \"name\": \"1 tablespoon unsalte\",\n    \"recipe\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "Add Ingredient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"100 gms onion\",\n    \"recipe\": 1028\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/ingredient/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ingredient",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"100 gms onion\",\n    \"recipe\": 1028\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/ingredient/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"ingredient",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 18 Feb 2024 14:48:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "style-src 'self' 'unsafe-inline'; default-src 'self'; img-src 'self' http://localhost:3000; font-src 'self' 'unsafe-inline' http://localhost:3000; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://browser.sentry-cdn.com http://localhost:3000 ws://localhost:3000/ws; connect-src 'self' https://sentry.io http://localhost:3000 ws://localhost:3000/ws"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "129"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "accelerometer=(), camera=(), display-capture=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 8446,\n    \"created\": \"2024-02-18T14:48:52.038472Z\",\n    \"modified\": \"2024-02-18T14:48:52.038472Z\",\n    \"name\": \"100 gms onion\",\n    \"recipe\": 1028\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit Ingredient",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 8446,\n    \"name\": \"120 gms onion\",\n    \"recipe\": 1028\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/ingredient/:ingredientId/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ingredient",
+								":ingredientId",
+								""
+							],
+							"variable": [
+								{
+									"key": "ingredientId",
+									"value": "8446"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 8446,\n    \"name\": \"120 gms onion\",\n    \"recipe\": 1028\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/ingredient/8446/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"ingredient",
+										"8446",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 18 Feb 2024 14:57:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "style-src 'self' 'unsafe-inline'; default-src 'self'; img-src 'self' http://localhost:3000; font-src 'self' 'unsafe-inline' http://localhost:3000; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://browser.sentry-cdn.com http://localhost:3000 ws://localhost:3000/ws; connect-src 'self' https://sentry.io http://localhost:3000 ws://localhost:3000/ws"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "129"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "accelerometer=(), camera=(), display-capture=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 8446,\n    \"created\": \"2024-02-18T14:48:52.038472Z\",\n    \"modified\": \"2024-02-18T14:57:53.458142Z\",\n    \"name\": \"120 gms onion\",\n    \"recipe\": 1028\n}"
+						}
+					]
+				},
+				{
+					"name": "Patch Ingredient",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"100 gms onion\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/ingredient/:ingredientId/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ingredient",
+								":ingredientId",
+								""
+							],
+							"variable": [
+								{
+									"key": "ingredientId",
+									"value": "8446"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"100 gms onion\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/ingredient/8446/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"ingredient",
+										"8446",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 18 Feb 2024 14:59:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "style-src 'self' 'unsafe-inline'; default-src 'self'; img-src 'self' http://localhost:3000; font-src 'self' 'unsafe-inline' http://localhost:3000; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://browser.sentry-cdn.com http://localhost:3000 ws://localhost:3000/ws; connect-src 'self' https://sentry.io http://localhost:3000 ws://localhost:3000/ws"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "129"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "accelerometer=(), camera=(), display-capture=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 8446,\n    \"created\": \"2024-02-18T14:48:52.038472Z\",\n    \"modified\": \"2024-02-18T14:59:08.822260Z\",\n    \"name\": \"100 gms onion\",\n    \"recipe\": 1028\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Ingredient",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/ingredient/:ingredientId/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ingredient",
+								":ingredientId",
+								""
+							],
+							"variable": [
+								{
+									"key": "ingredientId",
+									"value": "8446"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/ingredient/8446/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"ingredient",
+										"8446",
+										""
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Server",
+									"value": "gunicorn"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 18 Feb 2024 15:00:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "style-src 'self' 'unsafe-inline'; default-src 'self'; img-src 'self' http://localhost:3000; font-src 'self' 'unsafe-inline' http://localhost:3000; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://browser.sentry-cdn.com http://localhost:3000 ws://localhost:3000/ws; connect-src 'self' https://sentry.io http://localhost:3000 ws://localhost:3000/ws"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "accelerometer=(), camera=(), display-capture=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=()"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}
