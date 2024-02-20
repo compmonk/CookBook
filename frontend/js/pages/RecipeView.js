@@ -75,7 +75,7 @@ const RecipeView = () => {
           {
             key: "directions",
             label: "Directions",
-            children: recipe.directions,
+            children: <ul>{recipe.directions.split(".").map((line) => (<li>{line}</li>))}</ul>,
           },
         ]}
       />
